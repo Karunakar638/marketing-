@@ -1,36 +1,118 @@
 body {
     margin: 0;
-    font-family: Arial;
-    color: white;
-    background: #0f0f0f;
+    font-family: Arial, sans-serif;
+    background: #fff;
 }
 
+/* HERO */
 .hero {
-    padding: 120px 20px;
+    padding: 80px 20px;
+    color: white;
     text-align: center;
-    background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+    background: #0d1b2a url('https://i.imgur.com/JyMZB4J.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
 }
 
 .hero h1 {
     font-size: 42px;
-    margin-bottom: 10px;
+    font-weight: bold;
 }
 
+.hero h1 span {
+    color: #00d084;
+}
+
+.hero p {
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    background: #00d084;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+/* GENERAL SECTIONS */
 .section {
     padding: 60px 20px;
-    max-width: 800px;
+    text-align: center;
+}
+
+.section.white {
+    background: #f8fafc;
+}
+
+.section h2 {
+    font-size: 32px;
+}
+
+.subtitle {
+    max-width: 650px;
+    margin: 15px auto 40px;
+    color: #64748b;
+}
+
+/* CARDS */
+.cards {
+    max-width: 950px;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
 }
 
-.alt {
-    background: #111;
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
+.card.small {
+    padding: 20px;
 }
 
-ul {
-    line-height: 1.8;
+/* CONTACT */
+.contact {
+    background: #0d1b2a;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-cards {
+    display: grid;
+    max-width: 900px;
+    margin: 30px auto;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.contact-card {
+    background: #1b263b;
+    padding: 20px;
+    border-radius: 12px;
 }
